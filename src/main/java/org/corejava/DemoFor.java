@@ -6,6 +6,7 @@ public class DemoFor {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         int exp=0;
+
         for(int vacancy=30;vacancy>0;){
             System.out.println("Enter the experience ");
             exp= scanner.nextInt();
