@@ -1,5 +1,7 @@
 package org.corejava.methods;
 
+import java.util.Random;
+
 public class UserDefined2 {
 
     public void actTwo(int dol){
@@ -33,8 +35,18 @@ public class UserDefined2 {
         return construct;
     }
 
+    public int getOTP(){
+        Random ran=new Random();
+        int num=ran.nextInt(10000);
+        return num;
+    }
+
     public static void main(String[] args) {
         UserDefined2 u2=new UserDefined2();
+
+        int ot=u2.getOTP();
+        System.out.println("OTP is "+ot);
+
         u2.actTwo(2430);
         String pat=u2.lowerPyramid((short)6);
         System.out.println(pat);
