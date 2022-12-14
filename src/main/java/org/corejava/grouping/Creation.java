@@ -14,7 +14,7 @@ Array:
             type[] var/obj=new type[size];
     Operations:
         Create
-        Insert
+        Insert              >> loop
         Update
         Read
         List/ Traverse      >> visiting each index/position of array
